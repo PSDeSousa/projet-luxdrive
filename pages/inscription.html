@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<div class="compte">
+    <h1>Créer un compte</h1>
+    <p>C'est simple et rapide</p>
+    <form id="formulaire">
+        <div>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            <input type="text" id="nom" name="nom" placeholder="Nom de famille" required>
+        </div>
+        <div>
+            <label>
+                Date de naissance :
+                    <select name="jour">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <select name="jour">
+                        <option value="janvier">janvier</option>
+                        <option value="février">février</option>
+                        <option value="mars">mars</option>
+                    </select>
+                    <select name="annee">
+                        <option value="2000">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                    </select>
+            </label>
+        </div>
+        <div>
+            <label for="femme">
+                <input type="radio" name="genre" value="femme"> Femme
+            </label>
+            <label for="homme">
+                <input type="radio" name="genre" value="homme"> Homme
+            </label>
+            <label for="personalise">
+                <input type="radio" name="genre" value="personalise"> Femme
+            </label>
+        </div>
+        <div>
+            <label name="coordonnee">
+                Numéros Mobile ou e-mail
+                <input type="text" name="tel-mail" id="tel-mail">
+            <label>
+        </div>
+        <div>
+            <label for="password">
+                Mot de passe :
+                <input type="password" name="password">
+            </label>
+        </div>
+        <div>
+            <p>Les personnes qui utilisent notre service ont pu importer vos coordonnées sur Facebook. En savoir plus.</p>
+            <p>En cliquant sur S’inscrire, vous acceptez nos Conditions générales. Découvrez comment nous recueillons, utilisons et partageons vos données en lisant notre Politique de confidentialité et comment nous utilisons les cookies et autres technologies similaires en consultant notre Politique d’utilisation des cookies. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.</p>
+        </div>
+        <div>
+            <button id="submit" type="submit">
+                S'inscrire
+            </button>
+        </div>
+        <div>
+            <a href="#">Vous avez déjà un compte ?</a>
+        </div>
+    </form>
+</div>
+</body>
+<script src="../script-inscription.js"></script>
+</html>
